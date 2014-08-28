@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="Event.asmx.cs" Class="EventMonitoringWS.Event" %>

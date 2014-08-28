@@ -1,0 +1,7 @@
+D:\Projects\EventMonitoringProject\EventMonitoringTest\bin\Debug\WebAdminTest.webtest
+D:\Projects\EventMonitoringProject\EventMonitoringTest\bin\Debug\WebTestAdminPage.webtest
+D:\Projects\EventMonitoringProject\EventMonitoringTest\bin\Debug\EventMonitoringTest.dll
+D:\Projects\EventMonitoringProject\EventMonitoringTest\bin\Debug\EventMonitoringTest.pdb
+D:\Projects\EventMonitoringProject\EventMonitoringTest\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\EventMonitoringProject\EventMonitoringTest\obj\Debug\EventMonitoringTest.dll
+D:\Projects\EventMonitoringProject\EventMonitoringTest\obj\Debug\EventMonitoringTest.pdb

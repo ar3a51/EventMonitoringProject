@@ -1,0 +1,16 @@
+D:\Projects\EventMonitoringService\EventMonitoringService\bin\Debug\EventMonitoringService.exe
+D:\Projects\EventMonitoringService\EventMonitoringService\bin\Debug\EventMonitoringService.pdb
+D:\Projects\EventMonitoringService\EventMonitoringService\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Projects\EventMonitoringService\EventMonitoringService\obj\x86\Debug\EventMonitoringService.exe
+D:\Projects\EventMonitoringService\EventMonitoringService\obj\x86\Debug\EventMonitoringService.pdb
+D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Debug\EventMonitoringService.exe.config
+D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Debug\EventMonitoringService.exe
+D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Debug\EventMonitoringService.pdb
+D:\Projects\EventMonitoringProject\EventMonitoringService\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Projects\EventMonitoringProject\EventMonitoringService\obj\x86\Debug\EventMonitoringService.exe
+D:\Projects\EventMonitoringProject\EventMonitoringService\obj\x86\Debug\EventMonitoringService.pdb
+D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Debug\EventMonitoringService.exe.manifest
+D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Debug\EventMonitoringService.application
+D:\Projects\EventMonitoringProject\EventMonitoringService\obj\x86\Debug\EventMonitoringService.exe.manifest
+D:\Projects\EventMonitoringProject\EventMonitoringService\obj\x86\Debug\EventMonitoringService.application
+D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Debug\app.config

@@ -1,0 +1,7 @@
+D:\Projects\DataLayer\dllUnitTest\bin\Debug\dllUnitTest.dll
+D:\Projects\DataLayer\dllUnitTest\bin\Debug\dllUnitTest.pdb
+D:\Projects\DataLayer\dllUnitTest\bin\Debug\DataLayer.dll
+D:\Projects\DataLayer\dllUnitTest\bin\Debug\DataLayer.pdb
+D:\Projects\DataLayer\dllUnitTest\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\DataLayer\dllUnitTest\obj\Debug\dllUnitTest.dll
+D:\Projects\DataLayer\dllUnitTest\obj\Debug\dllUnitTest.pdb

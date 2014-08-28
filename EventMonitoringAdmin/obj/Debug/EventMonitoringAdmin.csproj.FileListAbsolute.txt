@@ -1,0 +1,9 @@
+D:\Projects\EventMonitoringProject\EventMonitoringAdmin\bin\EventMonitoringAdmin.dll
+D:\Projects\EventMonitoringProject\EventMonitoringAdmin\bin\EventMonitoringAdmin.pdb
+D:\Projects\EventMonitoringProject\EventMonitoringAdmin\bin\System.Web.Mvc.dll
+D:\Projects\EventMonitoringProject\EventMonitoringAdmin\bin\System.Web.Routing.dll
+D:\Projects\EventMonitoringProject\EventMonitoringAdmin\bin\System.Web.Mvc.xml
+D:\Projects\EventMonitoringProject\EventMonitoringAdmin\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\EventMonitoringProject\EventMonitoringAdmin\obj\Debug\EventMonitoringAdmin.dll
+D:\Projects\EventMonitoringProject\EventMonitoringAdmin\obj\Debug\EventMonitoringAdmin.pdb
+D:\Projects\EventMonitoringProject\EventMonitoringAdmin\bin\Microsoft.Web.Mvc.dll

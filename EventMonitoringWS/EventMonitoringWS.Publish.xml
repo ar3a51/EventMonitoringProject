@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\inetpub\wwwroot\EventMonitoringWS" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Dev System" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="False">
+    <file relUrl="bin/DataLayer.pdb" publishTime="01/18/2012 11:39:39" />
+    <file relUrl="bin/DataLayer.exe" publishTime="01/18/2012 11:39:39" />
+    <file relUrl="Web.config" publishTime="01/18/2012 11:40:03" />
+    <file relUrl="Event.asmx" publishTime="07/08/2011 09:59:55" />
+    <file relUrl="bin/WebServiceCentre.dll" publishTime="01/18/2012 11:39:40" />
+    <file relUrl="User.asmx" publishTime="07/15/2011 15:06:49" />
+    <file relUrl="bin/WebServiceCentre.pdb" publishTime="01/18/2012 11:39:40" />
+  </publishProfile>
+  <publishProfile publishUrl="http://ca-tst-bta-101:80" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="default web site/EventMonitoringWS" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="True" profileName="Test system" publishMethod="MSDeploy" replaceMatchingFiles="True" userName="ca\admHPrameswara" savePWD="False" userPWD="" SelectedForPublish="True" />
+</publishData>

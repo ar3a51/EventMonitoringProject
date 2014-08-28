@@ -1,0 +1,87 @@
+﻿Uninstalling assembly 'D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Release2\EventMonitoringService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Release2\EventMonitoringService.InstallLog
+   assemblypath = D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Release2\EventMonitoringService.exe
+Removing EventLog source Event Monitoring Service.
+An exception occurred during the uninstallation of the System.Diagnostics.EventLogInstaller installer.
+System.Security.SecurityException: Requested registry access is not allowed.
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.
+Uninstalling assembly 'D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Release2\EventMonitoringService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Release2\EventMonitoringService.InstallLog
+   assemblypath = D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Release2\EventMonitoringService.exe
+Removing EventLog source Event Monitoring Service.
+An exception occurred during the uninstallation of the System.Diagnostics.EventLogInstaller installer.
+System.Security.SecurityException: Requested registry access is not allowed.
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.
+Uninstalling assembly 'D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Release2\EventMonitoringService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Release2\EventMonitoringService.InstallLog
+   assemblypath = D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Release2\EventMonitoringService.exe
+Removing EventLog source Event Monitoring Service.
+Service Event Monitoring Service is being removed from the system...
+Service Event Monitoring Service was successfully removed from the system.
+Uninstalling assembly 'D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Release2\EventMonitoringService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Release2\EventMonitoringService.InstallLog
+   assemblypath = D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Release2\EventMonitoringService.exe
+Removing EventLog source Event Monitoring Service.
+Warning: The source Event Monitoring Service is not registered on the local machine.
+Service Event Monitoring Service is being removed from the system...
+Service Event Monitoring Service was successfully removed from the system.
+Uninstalling assembly 'D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Release2\EventMonitoringService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Release2\EventMonitoringService.InstallLog
+   assemblypath = D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Release2\EventMonitoringService.exe
+Removing EventLog source Event Monitoring Service.
+Warning: The source Event Monitoring Service is not registered on the local machine.
+Service Event Monitoring Service is being removed from the system...
+An exception occurred during the uninstallation of the System.ServiceProcess.ServiceInstaller installer.
+System.ComponentModel.Win32Exception: The specified service does not exist as an installed service
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.
+Installing assembly 'D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Release2\EventMonitoringService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Release2\EventMonitoringService.InstallLog
+   assemblypath = D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Release2\EventMonitoringService.exe
+Installing service Event Monitoring Service...
+Service Event Monitoring Service has been successfully installed.
+Creating EventLog source Event Monitoring Service in log Application...
+Committing assembly 'D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Release2\EventMonitoringService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Release2\EventMonitoringService.InstallLog
+   assemblypath = D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Release2\EventMonitoringService.exe
+Uninstalling assembly 'D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Release2\EventMonitoringService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Release2\EventMonitoringService.InstallLog
+   assemblypath = D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Release2\EventMonitoringService.exe
+Removing EventLog source Event Monitoring Service.
+Service Event Monitoring Service is being removed from the system...
+Service Event Monitoring Service was successfully removed from the system.
+Uninstalling assembly 'D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Release2\EventMonitoringService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Release2\EventMonitoringService.InstallLog
+   assemblypath = D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Release2\EventMonitoringService.exe
+Removing EventLog source Event Monitoring Service.
+Warning: The source Event Monitoring Service is not registered on the local machine.
+Service Event Monitoring Service is being removed from the system...
+Service Event Monitoring Service was successfully removed from the system.
+Uninstalling assembly 'D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Release2\EventMonitoringService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Release2\EventMonitoringService.InstallLog
+   assemblypath = D:\Projects\EventMonitoringProject\EventMonitoringService\bin\Release2\EventMonitoringService.exe
+Removing EventLog source Event Monitoring Service.
+Warning: The source Event Monitoring Service is not registered on the local machine.
+Service Event Monitoring Service is being removed from the system...
+An exception occurred during the uninstallation of the System.ServiceProcess.ServiceInstaller installer.
+System.ComponentModel.Win32Exception: The specified service does not exist as an installed service
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.

@@ -1,0 +1,14 @@
+D:\Projects\EventMonitoringProject\WebServiceCentre\bin\DataLayer.exe
+D:\Projects\EventMonitoringProject\WebServiceCentre\bin\DataLayer.pdb
+D:\Projects\EventMonitoringProject\WebServiceCentre\obj\Release\ResolveAssemblyReference.cache
+D:\Projects\EventMonitoringProject\WebServiceCentre\bin\EventMonitoringWS.dll
+D:\Projects\EventMonitoringProject\WebServiceCentre\bin\EventMonitoringWS.pdb
+D:\Projects\EventMonitoringProject\WebServiceCentre\obj\Release\EventMonitoringWS.dll
+D:\Projects\EventMonitoringProject\WebServiceCentre\obj\Release\EventMonitoringWS.pdb
+D:\Projects\EventMonitoringProject\EventMonitoringWS\bin\EventMonitoringWS.dll
+D:\Projects\EventMonitoringProject\EventMonitoringWS\bin\EventMonitoringWS.pdb
+D:\Projects\EventMonitoringProject\EventMonitoringWS\bin\DataLayer.pdb
+D:\Projects\EventMonitoringProject\EventMonitoringWS\obj\Release\ResolveAssemblyReference.cache
+D:\Projects\EventMonitoringProject\EventMonitoringWS\obj\Release\EventMonitoringWS.dll
+D:\Projects\EventMonitoringProject\EventMonitoringWS\obj\Release\EventMonitoringWS.pdb
+D:\Projects\EventMonitoringProject\EventMonitoringWS\bin\DataLayer.dll

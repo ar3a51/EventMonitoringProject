@@ -1,0 +1,14 @@
+D:\Projects\WebServiceCentre\bin\WebServiceCentre.dll
+D:\Projects\WebServiceCentre\bin\WebServiceCentre.pdb
+D:\Projects\WebServiceCentre\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\WebServiceCentre\obj\Debug\WebServiceCentre.dll
+D:\Projects\WebServiceCentre\obj\Debug\WebServiceCentre.pdb
+D:\Projects\WebServiceCentre\bin\DataLayer.dll
+D:\Projects\WebServiceCentre\bin\DataLayer.pdb
+D:\Projects\EventMonitoringProject\WebServiceCentre\bin\WebServiceCentre.dll
+D:\Projects\EventMonitoringProject\WebServiceCentre\bin\WebServiceCentre.pdb
+D:\Projects\EventMonitoringProject\WebServiceCentre\bin\DataLayer.pdb
+D:\Projects\EventMonitoringProject\WebServiceCentre\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\EventMonitoringProject\WebServiceCentre\obj\Debug\WebServiceCentre.dll
+D:\Projects\EventMonitoringProject\WebServiceCentre\obj\Debug\WebServiceCentre.pdb
+D:\Projects\EventMonitoringProject\WebServiceCentre\bin\DataLayer.exe

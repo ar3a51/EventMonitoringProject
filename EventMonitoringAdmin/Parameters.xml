@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<parameters>
+  <parameter name="WebService1 Endpoint Address"
+    description="Please provide the endpoint address for the Web service that you want to call."
+    defaultValue="http://localhost:35080/WebServiceCentre/User.asmx"
+    tags="">
+    <parameterEntry
+      kind="XmlFile"
+      scope="obj\\Release\\Package\\PackageTmp\\Web\.config$"
+      match="//setting[@name='EventMonitoringAdmin_UserManagement_User']/value/text()" />
+  </parameter>
+</parameters>

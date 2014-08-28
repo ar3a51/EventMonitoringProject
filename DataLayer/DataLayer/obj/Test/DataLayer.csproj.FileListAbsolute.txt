@@ -1,0 +1,6 @@
+D:\Projects\EventMonitoringProject\DataLayer\DataLayer\bin\Test\DataLayer.pdb
+D:\Projects\EventMonitoringProject\DataLayer\DataLayer\obj\Test\ResolveAssemblyReference.cache
+D:\Projects\EventMonitoringProject\DataLayer\DataLayer\obj\Test\DataLayer.pdb
+D:\Projects\EventMonitoringProject\DataLayer\DataLayer\bin\Test\DataLayer.dll.config
+D:\Projects\EventMonitoringProject\DataLayer\DataLayer\bin\Test\DataLayer.dll
+D:\Projects\EventMonitoringProject\DataLayer\DataLayer\obj\Test\DataLayer.dll

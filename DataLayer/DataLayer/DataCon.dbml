@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DEVDB" Class="DataConDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=localhost;Initial Catalog=DEVDB;Integrated Security=True" SettingsObjectName="DataLayer.Properties.Settings" SettingsPropertyName="DEVDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tblType" Member="tblTypes">
+    <Type Name="tblType">
+      <Column Name="iTypeId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="vchType" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="dtInsertDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="tblType_tblMachine" Member="tblMachines" ThisKey="iTypeId" OtherKey="iType" Type="tblMachine" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblMachine" Member="tblMachines">
+    <Type Name="tblMachine">
+      <Column Name="chMachineName" Type="System.String" DbType="Char(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="vchEnvironment" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="iType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="true" />
+      <Column Name="dtAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="tblMachine_tblMonitoring" Member="tblMonitorings" ThisKey="chMachineName" OtherKey="chUsername" Type="tblMonitoring" />
+      <Association Name="tblType_tblMachine" Member="tblType" ThisKey="iType" OtherKey="iTypeId" Type="tblType" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblUser" Member="tblUsers">
+    <Type Name="tblUser" Id="ID2">
+      <Column Name="chUsername" Type="System.String" DbType="NChar(80) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="vchFirstname" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="vchLastname" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="vchPrimaryEmail" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="vchSecondaryEmail" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="dtInsertdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="tblUser_tblMonitoring" Member="tblMonitorings" ThisKey="chUsername" OtherKey="chUsername" Type="tblMonitoring" />
+      <Association Name="tblUser_tblSuppressedNotification" Member="tblSuppressedNotifications" ThisKey="chUsername" OtherKey="chUsername" Type="tblSuppressedNotification" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblMonitoring" Member="tblMonitorings">
+    <Type Name="tblMonitoring">
+      <Column Name="iMonitoringId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="chUsername" Type="System.String" DbType="Char(80) NOT NULL" CanBeNull="false" />
+      <Column Name="chMachineName" Type="System.String" DbType="Char(50) NOT NULL" CanBeNull="false" />
+      <Column Name="dtInserted" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="tblUser_tblMonitoring" Member="tblUser" ThisKey="chUsername" OtherKey="chUsername" Type="tblUser" IsForeignKey="true" />
+      <Association Name="tblMachine_tblMonitoring" Member="tblMachine" ThisKey="chUsername" OtherKey="chMachineName" Type="tblMachine" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblSuppressedNotification" Member="tblSuppressedNotifications">
+    <Type Name="tblSuppressedNotification" Id="ID1">
+      <Column Name="iSuppressedId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="chUsername" Type="System.String" DbType="NChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="iEventId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="vchSource" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Association Name="tblUser_tblSuppressedNotification" Member="tblUser" ThisKey="chUsername" OtherKey="chUsername" Type="tblUser" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblEventLog" Member="tblEventLogs">
+    <Type Name="tblEventLog">
+      <Column Name="GUID" AutoSync="Never" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="iEventId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="vchEventMessage" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="vchEventType" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="chMachineName" Type="System.String" DbType="Char(50)" CanBeNull="true" />
+      <Column Name="chUsername" Type="System.String" DbType="Char(80)" CanBeNull="true" />
+      <Column Name="vchSource" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="dtTimeGenerated" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="vchComment" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="bIsResolved" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="chResolvedBy" Type="System.String" DbType="Char(80)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.RetrieveSuppressedList" Method="RetrieveSuppressedList">
+    <Parameter Name="chUsername" Type="System.String" DbType="VarChar(255)" />
+    <ElementType IdRef="ID1" />
+  </Function>
+  <Function Name="dbo.RetrieveUserEmail" Method="RetrieveUserEmail">
+    <Parameter Name="chMachineName" Type="System.String" DbType="Char(50)" />
+    <Parameter Name="iEventid" Type="System.Int64" DbType="BigInt" />
+    <ElementType IdRef="ID2" />
+  </Function>
+</Database>

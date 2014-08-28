@@ -1,0 +1,7 @@
+obj\Release\MachineInfoDlg.wixobj
+obj\Release\ModInstallDirDlg.wixobj
+obj\Release\ModWixUI_InstallDir.wixobj
+obj\Release\Product.wixobj
+obj\Release\Product.Generated.wixobj
+D:\Projects\EventMonitoringProject\AgentInstaller\bin\Release\ICAA.EventMonitor.Agent.msi
+D:\Projects\EventMonitoringProject\AgentInstaller\bin\Release\ICAA.EventMonitor.Agent.wixpdb

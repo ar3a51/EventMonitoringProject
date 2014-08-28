@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="EventMonitoringAdmin.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="EventMonitoringAdmin_UserManagement_User" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/EventMonitoringWS/User.asmx</Value>
+    </Setting>
+    <Setting Name="EventMonitoringAdmin_EventManagementService_Event" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/EventMonitoringWS/Event.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

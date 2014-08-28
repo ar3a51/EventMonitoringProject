@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataCon">
+  <DataContextMoniker Name="/DataConDataContext" />
+  <nestedChildShapes>
+    <classShape Id="2ad3bba4-736c-4396-8271-0bfeba6b24ff" absoluteBounds="7.375, 4.375, 2, 1.26050048828125">
+      <DataClassMoniker Name="/DataConDataContext/tblType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8831cc57-2a68-4ccc-8efc-f0363fcffc24" absoluteBounds="7.39, 4.835, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4382a094-5663-42a0-bd79-66a4742e4660" absoluteBounds="6.25, 0.5, 2, 1.4248478190104168">
+      <DataClassMoniker Name="/DataConDataContext/tblMachine" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7a6bfe85-820e-452e-be07-bc59ecc772cc" absoluteBounds="6.265, 0.96, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.8125 : 4.375); (7.8125 : 1.92484781901042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataConDataContext/tblType/tblType_tblMachine" />
+      <nodes>
+        <classShapeMoniker Id="2ad3bba4-736c-4396-8271-0bfeba6b24ff" />
+        <classShapeMoniker Id="4382a094-5663-42a0-bd79-66a4742e4660" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="491a7621-19da-47d1-9a96-e36c93d344be" absoluteBounds="4.125, 5.25, 2, 1.75354248046875">
+      <DataClassMoniker Name="/DataConDataContext/tblUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="134ca452-133b-43ad-8eda-ae7b705ed2f8" absoluteBounds="4.14, 5.71, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b102db5e-f384-4ace-ab54-551fa6733f8b" absoluteBounds="4, 2.5, 2, 1.4248478190104168">
+      <DataClassMoniker Name="/DataConDataContext/tblMonitoring" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bf2073f9-36e5-4882-8b9d-836900f350cb" absoluteBounds="4.015, 2.96, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.0625 : 5.25); (5.0625 : 3.92484781901042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataConDataContext/tblUser/tblUser_tblMonitoring" />
+      <nodes>
+        <classShapeMoniker Id="491a7621-19da-47d1-9a96-e36c93d344be" />
+        <classShapeMoniker Id="b102db5e-f384-4ace-ab54-551fa6733f8b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.25 : 1.92484781901042); (6 : 2.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataConDataContext/tblMachine/tblMachine_tblMonitoring" />
+      <nodes>
+        <classShapeMoniker Id="4382a094-5663-42a0-bd79-66a4742e4660" />
+        <classShapeMoniker Id="b102db5e-f384-4ace-ab54-551fa6733f8b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="0cc428a1-10a7-42b1-9755-e45bf2697929" absoluteBounds="0.875, 5.25, 2, 1.4248478190104168">
+      <DataClassMoniker Name="/DataConDataContext/tblSuppressedNotification" />
+      <nestedChildShapes>
+        <elementListCompartment Id="28019079-4cb4-4ba1-a6d9-07349f3a980f" absoluteBounds="0.89000000000000012, 5.71, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.125 : 5.96242390950521); (2.875 : 5.96242390950521)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataConDataContext/tblUser/tblUser_tblSuppressedNotification" />
+      <nodes>
+        <classShapeMoniker Id="491a7621-19da-47d1-9a96-e36c93d344be" />
+        <classShapeMoniker Id="0cc428a1-10a7-42b1-9755-e45bf2697929" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="c91129c4-74e8-4363-b525-1d7f8442a6d8" absoluteBounds="1, 1, 2, 2.5752791341145831">
+      <DataClassMoniker Name="/DataConDataContext/tblEventLog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="83b25ce2-7181-439d-972b-ff2b6fd01102" absoluteBounds="1.0150000000000001, 1.46, 1.9700000000000002, 2.015279134114583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" 
+     xmlns:util="http://schemas.microsoft.com/wix/UtilExtension" 
+     xmlns:netfx="http://schemas.microsoft.com/wix/NetFxExtension">
+  
+  <Product Id="F9E5A0E2-E22F-4694-A4DA-05FCB28FDB96" 
+           Name="ICAA.EventMonitor.Agent" Language="1033" 
+           Version="1.0.0.0" 
+           Manufacturer="ICAA" 
+           UpgradeCode="B8EBD5DE-7ACC-4d59-8B2F-EFD0552D2207">
+    
+		<Package Manufacturer="ICAA" 
+             InstallerVersion="200" 
+             Compressed="yes" />
+
+		<Media Id="1" Cabinet="AgentInstaller.1.0.cab" EmbedCab="yes" />
+
+    <PropertyRef Id="NETFRAMEWORK35"/>
+    <Condition Message="This application requires .NET Framework 3.5. Please install the .NET Framework then run this installer again.">
+      <![CDATA[Installed OR NETFRAMEWORK35]]>
+     </Condition>
+    
+
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder" Name="ICAA Event Monitoring">
+				<Directory Id="INSTALLLOCATION" Name="ICAA Event Monitoring">
+					<!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
+					 <Component Id="EventMonitoringService" Guid="EE0E2BD2-03A5-4ce7-8BAC-E88368140704">
+						<!-- TODO: Insert files, registry keys, and other resources here. -->
+             <File Id="App.config" Name="EventMonitoringService.exe.config" Vital="yes" KeyPath="no" Source="..\EventMonitoringService\bin\release\EventMonitoringService.exe.config" />
+             <util:XmlFile SelectionLanguage="XPath" Id="EndPointConfig" Action="setValue" Permanent="yes" File="[#App.config]"
+                ElementPath="//configuration//client//endpoint" Name="address"
+                Value="[WIXUI_WEBPATH]" />
+             <util:XmlFile SelectionLanguage="XPath" Id="LogMonitor" Action="setValue" Permanent="yes" File="[#App.config]"
+               ElementPath="//configuration//appSettings//add[\[]@key='logToMonitor'[\]]" Name="value"
+               Value="[WIXUI_LOGNAME]" />
+             <util:XmlFile SelectionLanguage="XPath" Id="SeverityAlert" Action="setValue" Permanent="yes" File="[#App.config]"
+               ElementPath="//configuration//appSettings//add[\[]@key='severityToAlert'[\]]" Name="value"
+               Value="[WIXUI_ALERT]" />
+             <util:XmlFile SelectionLanguage="XPath" Id="MachineTypeDetail" Action="setValue" Permanent="yes" File="[#App.config]"
+               ElementPath="//configuration//appSettings//add[\[]@key='machineType'[\]]" Name="value"
+               Value="[WIXUI_MACHINETYPE]" />
+             <util:XmlFile SelectionLanguage="XPath" Id="MachineEnvironmentDetail" Action="setValue" Permanent="yes" File="[#App.config]"
+               ElementPath="//configuration//appSettings//add[\[]@key='environment'[\]]" Name="value"
+               Value="[WIXUI_ENVIRONMENT]" />
+             <File Id="EventMonitoringService.exe" Name="EventMonitoringService.exe" Source="..\EventMonitoringService\bin\Release\EventMonitoringService.exe" Vital="yes" KeyPath="yes" DiskId="1"/>
+             <ServiceInstall
+              Id="ServiceInstaller"
+              Type="ownProcess"
+              Vital="yes"
+              Name="ICAA Event Monitoring"
+              DisplayName="ICAA Event Monitoring Service"
+              Description="Monitor event log activity.  Any activity will be send to web service."
+              Start="auto"
+              Account="LocalSystem"
+              ErrorControl="ignore"
+              Interactive="no"/>
+             <!--<ServiceControl Id="StartService" Start="install" Stop="both" Remove="uninstall" Name="ICAA.EventMonitor.Agent.Service" Wait="yes" />-->
+					 </Component>
+				</Directory>
+			</Directory>
+		</Directory>
+
+		<Feature Id="ProductFeature" Title="ICAA.EventMonitor.Agent" Level="1">
+			<!-- TODO: Remove the comments around this ComponentRef element and the Component above in order to add resources to this installer. -->
+			 <ComponentRef Id="EventMonitoringService" /> 
+			
+			<!-- Note: The following ComponentGroupRef is required to pull in generated authoring from project references. -->
+			<ComponentGroupRef Id="Product.Generated" />
+		</Feature>
+    
+   
+    <UIRef Id="ModWixUI_InstallDir" />
+    <UIRef Id="WixUI_ErrorProgressText" />
+
+    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLLOCATION"/>
+    <Property Id="WIXUI_WEBPATH" Value="http://ca-syd-app-101:35080/EventMonitoringWS/event.asmx"/>
+    <Property Id="WIXUI_LOGNAME" Value="Application"/>
+    <Property Id="WIXUI_ALERT" Value="Error"/>
+    <Property Id="WIXUI_MACHINETYPE" Value="(eg. Development machine, Database machine, etc)"/>
+    <Property Id="WIXUI_ENVIRONMENT" Value="(eg. Development, Test, etc)"/>
+   </Product>
+ 
+</Wix>

@@ -1,0 +1,7 @@
+D:\Projects\EventMonitoringProject\EventMonitoringWS\bin\EventMonitoringWS.dll
+D:\Projects\EventMonitoringProject\EventMonitoringWS\bin\EventMonitoringWS.pdb
+D:\Projects\EventMonitoringProject\EventMonitoringWS\bin\DataLayer.pdb
+D:\Projects\EventMonitoringProject\EventMonitoringWS\obj\Test\ResolveAssemblyReference.cache
+D:\Projects\EventMonitoringProject\EventMonitoringWS\obj\Test\EventMonitoringWS.dll
+D:\Projects\EventMonitoringProject\EventMonitoringWS\obj\Test\EventMonitoringWS.pdb
+D:\Projects\EventMonitoringProject\EventMonitoringWS\bin\DataLayer.dll

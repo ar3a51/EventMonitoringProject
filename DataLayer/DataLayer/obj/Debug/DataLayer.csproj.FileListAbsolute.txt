@@ -1,0 +1,12 @@
+D:\Projects\DataLayer\DataLayer\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\DataLayer\DataLayer\bin\Debug\DataLayer.dll.config
+D:\Projects\DataLayer\DataLayer\bin\Debug\DataLayer.dll
+D:\Projects\DataLayer\DataLayer\bin\Debug\DataLayer.pdb
+D:\Projects\DataLayer\DataLayer\obj\Debug\DataLayer.dll
+D:\Projects\DataLayer\DataLayer\obj\Debug\DataLayer.pdb
+D:\Projects\EventMonitoringProject\DataLayer\DataLayer\bin\Debug\DataLayer.pdb
+D:\Projects\EventMonitoringProject\DataLayer\DataLayer\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\EventMonitoringProject\DataLayer\DataLayer\obj\Debug\DataLayer.pdb
+D:\Projects\EventMonitoringProject\DataLayer\DataLayer\bin\Debug\DataLayer.dll.config
+D:\Projects\EventMonitoringProject\DataLayer\DataLayer\bin\Debug\DataLayer.dll
+D:\Projects\EventMonitoringProject\DataLayer\DataLayer\obj\Debug\DataLayer.dll

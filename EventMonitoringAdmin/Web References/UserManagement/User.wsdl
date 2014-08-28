@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://ICAA.EventMonitoringService.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://ICAA.EventMonitoringService.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://ICAA.EventMonitoringService.org/">
+      <s:element name="addNewUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="firstName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lastName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="primaryEmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="secondaryEmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="machines" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="addNewUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="addNewUserResult" type="tns:ResultSet" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ResultSet">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="stringResultType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="stringResultMessage" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="stringResultData" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getMachines">
+        <s:complexType />
+      </s:element>
+      <s:element name="getMachinesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getMachinesResult" type="tns:ResultMachines" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ResultMachines">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:ResultSet">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="machines" type="tns:ArrayOfMachine" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfMachine">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Machine" nillable="true" type="tns:Machine" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Machine">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="machineName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="machineType" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getUserDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strUsername" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getUserDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getUserDetailsResult" type="tns:UserDetails" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UserDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="sUsername" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sFirstname" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sLastname" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sPrimaryEmail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sSecondaryEmail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="machines" type="tns:ArrayOfString" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="modifyUserSettings">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="firstName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lastName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="primaryEmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="secondaryEmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="machines" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="modifyUserSettingsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="modifyUserSettingsResult" type="tns:ResultSet" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="addSuppressedLog">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="operation" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="chUsername" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="log" type="tns:ArrayOfLogDetails" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfLogDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="LogDetails" nillable="true" type="tns:LogDetails" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="LogDetails">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="eventId" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="source" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="dtGenerated" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="chUsername" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="addSuppressedLogResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="addSuppressedLogResult" type="tns:resultUser" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="resultUser">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:ResultSet">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="suppressedLog">
+                <s:complexType>
+                  <s:sequence>
+                    <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                    <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                  </s:sequence>
+                </s:complexType>
+              </s:element>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="deleteSuppressedLog">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="log" type="tns:ArrayOfLogDetails" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteSuppressedLogResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="deleteSuppressedLogResult" type="tns:resultUser" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAllSuppressedLog">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAllSuppressedLogResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getAllSuppressedLogResult" type="tns:resultUser" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="modifySuppressedLogList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="chUsername" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="log" type="tns:ArrayOfLogDetails" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="modifySuppressedLogListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="modifySuppressedLogListResult" type="tns:ResultSet" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="addNewUserSoapIn">
+    <wsdl:part name="parameters" element="tns:addNewUser" />
+  </wsdl:message>
+  <wsdl:message name="addNewUserSoapOut">
+    <wsdl:part name="parameters" element="tns:addNewUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMachinesSoapIn">
+    <wsdl:part name="parameters" element="tns:getMachines" />
+  </wsdl:message>
+  <wsdl:message name="getMachinesSoapOut">
+    <wsdl:part name="parameters" element="tns:getMachinesResponse" />
+  </wsdl:message>
+  <wsdl:message name="getUserDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:getUserDetails" />
+  </wsdl:message>
+  <wsdl:message name="getUserDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:getUserDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="modifyUserSettingsSoapIn">
+    <wsdl:part name="parameters" element="tns:modifyUserSettings" />
+  </wsdl:message>
+  <wsdl:message name="modifyUserSettingsSoapOut">
+    <wsdl:part name="parameters" element="tns:modifyUserSettingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="addSuppressedLogSoapIn">
+    <wsdl:part name="parameters" element="tns:addSuppressedLog" />
+  </wsdl:message>
+  <wsdl:message name="addSuppressedLogSoapOut">
+    <wsdl:part name="parameters" element="tns:addSuppressedLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteSuppressedLogSoapIn">
+    <wsdl:part name="parameters" element="tns:deleteSuppressedLog" />
+  </wsdl:message>
+  <wsdl:message name="deleteSuppressedLogSoapOut">
+    <wsdl:part name="parameters" element="tns:deleteSuppressedLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAllSuppressedLogSoapIn">
+    <wsdl:part name="parameters" element="tns:getAllSuppressedLog" />
+  </wsdl:message>
+  <wsdl:message name="getAllSuppressedLogSoapOut">
+    <wsdl:part name="parameters" element="tns:getAllSuppressedLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="modifySuppressedLogListSoapIn">
+    <wsdl:part name="parameters" element="tns:modifySuppressedLogList" />
+  </wsdl:message>
+  <wsdl:message name="modifySuppressedLogListSoapOut">
+    <wsdl:part name="parameters" element="tns:modifySuppressedLogListResponse" />
+  </wsdl:message>
+  <wsdl:portType name="UserSoap">
+    <wsdl:operation name="addNewUser">
+      <wsdl:input message="tns:addNewUserSoapIn" />
+      <wsdl:output message="tns:addNewUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMachines">
+      <wsdl:input message="tns:getMachinesSoapIn" />
+      <wsdl:output message="tns:getMachinesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserDetails">
+      <wsdl:input message="tns:getUserDetailsSoapIn" />
+      <wsdl:output message="tns:getUserDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="modifyUserSettings">
+      <wsdl:input message="tns:modifyUserSettingsSoapIn" />
+      <wsdl:output message="tns:modifyUserSettingsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="addSuppressedLog">
+      <wsdl:input message="tns:addSuppressedLogSoapIn" />
+      <wsdl:output message="tns:addSuppressedLogSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteSuppressedLog">
+      <wsdl:input message="tns:deleteSuppressedLogSoapIn" />
+      <wsdl:output message="tns:deleteSuppressedLogSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllSuppressedLog">
+      <wsdl:input message="tns:getAllSuppressedLogSoapIn" />
+      <wsdl:output message="tns:getAllSuppressedLogSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="modifySuppressedLogList">
+      <wsdl:input message="tns:modifySuppressedLogListSoapIn" />
+      <wsdl:output message="tns:modifySuppressedLogListSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="UserSoap" type="tns:UserSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="addNewUser">
+      <soap:operation soapAction="http://ICAA.EventMonitoringService.org/addNewUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMachines">
+      <soap:operation soapAction="http://ICAA.EventMonitoringService.org/getMachines" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserDetails">
+      <soap:operation soapAction="http://ICAA.EventMonitoringService.org/getUserDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modifyUserSettings">
+      <soap:operation soapAction="http://ICAA.EventMonitoringService.org/modifyUserSettings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addSuppressedLog">
+      <soap:operation soapAction="http://ICAA.EventMonitoringService.org/addSuppressedLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteSuppressedLog">
+      <soap:operation soapAction="http://ICAA.EventMonitoringService.org/deleteSuppressedLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllSuppressedLog">
+      <soap:operation soapAction="http://ICAA.EventMonitoringService.org/getAllSuppressedLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modifySuppressedLogList">
+      <soap:operation soapAction="http://ICAA.EventMonitoringService.org/modifySuppressedLogList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="UserSoap12" type="tns:UserSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="addNewUser">
+      <soap12:operation soapAction="http://ICAA.EventMonitoringService.org/addNewUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMachines">
+      <soap12:operation soapAction="http://ICAA.EventMonitoringService.org/getMachines" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserDetails">
+      <soap12:operation soapAction="http://ICAA.EventMonitoringService.org/getUserDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modifyUserSettings">
+      <soap12:operation soapAction="http://ICAA.EventMonitoringService.org/modifyUserSettings" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addSuppressedLog">
+      <soap12:operation soapAction="http://ICAA.EventMonitoringService.org/addSuppressedLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteSuppressedLog">
+      <soap12:operation soapAction="http://ICAA.EventMonitoringService.org/deleteSuppressedLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllSuppressedLog">
+      <soap12:operation soapAction="http://ICAA.EventMonitoringService.org/getAllSuppressedLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modifySuppressedLogList">
+      <soap12:operation soapAction="http://ICAA.EventMonitoringService.org/modifySuppressedLogList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="User">
+    <wsdl:port name="UserSoap" binding="tns:UserSoap">
+      <soap:address location="http://localhost/EventMonitoringWS/User.asmx" />
+    </wsdl:port>
+    <wsdl:port name="UserSoap12" binding="tns:UserSoap12">
+      <soap12:address location="http://localhost/EventMonitoringWS/User.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

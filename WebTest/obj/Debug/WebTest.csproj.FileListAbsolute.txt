@@ -1,0 +1,5 @@
+D:\Projects\EventMonitoringProject\WebTest\bin\Debug\WebTest.dll
+D:\Projects\EventMonitoringProject\WebTest\bin\Debug\WebTest.pdb
+D:\Projects\EventMonitoringProject\WebTest\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\EventMonitoringProject\WebTest\obj\Debug\WebTest.dll
+D:\Projects\EventMonitoringProject\WebTest\obj\Debug\WebTest.pdb
